@@ -47,6 +47,7 @@ public class FileDataHandler
             }
 
         }
+        return loadedData;
     }
 
     public void Save(GameData data)
