@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 public class counterPuzzle : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip counterTick;
+    //public AudioClip counterPuzzleComplete;
     public TextMeshProUGUI numberText1;
     public TextMeshProUGUI numberText2;
     public TextMeshProUGUI numberText3;
@@ -37,6 +40,7 @@ public class counterPuzzle : MonoBehaviour
 
         if (counter1 < 10)
         {
+            audioSource.PlayOneShot(counterTick);
             counter1++;
             numberText1.text = counter1.ToString();
         }
@@ -46,6 +50,7 @@ public class counterPuzzle : MonoBehaviour
     {
         if (counter1 > 0)
         {
+            audioSource.PlayOneShot(counterTick);
             counter1--;
             numberText1.text = counter1.ToString();
         }
@@ -54,6 +59,7 @@ public class counterPuzzle : MonoBehaviour
     {
         if (counter2 < 10)
         {
+            audioSource.PlayOneShot(counterTick);
             counter2++;
             numberText2.text = counter2.ToString();
         }
@@ -63,6 +69,7 @@ public class counterPuzzle : MonoBehaviour
     {
         if (counter2 > 0)
         {
+            audioSource.PlayOneShot(counterTick);
             counter2--;
             numberText2.text = counter2.ToString();
         }
@@ -71,6 +78,7 @@ public class counterPuzzle : MonoBehaviour
     {
         if (counter3 < 10)
         {
+            audioSource.PlayOneShot(counterTick);
             counter3++;
             numberText3.text = counter3.ToString();
         }
@@ -80,6 +88,7 @@ public class counterPuzzle : MonoBehaviour
     {
         if (counter3 > 0)
         {
+            audioSource.PlayOneShot(counterTick);
             counter3--;
             numberText3.text = counter3.ToString();
         }
@@ -88,6 +97,7 @@ public class counterPuzzle : MonoBehaviour
     {
         if (counter4 < 10)
         {
+            audioSource.PlayOneShot(counterTick);
             counter4++;
             numberText4.text = counter4.ToString();
         }
@@ -97,6 +107,7 @@ public class counterPuzzle : MonoBehaviour
     {
         if (counter4 > 0)
         {
+            audioSource.PlayOneShot(counterTick);
             counter4--;
             numberText4.text = counter4.ToString();
         }
@@ -106,6 +117,7 @@ public class counterPuzzle : MonoBehaviour
     {
 		successText.gameObject.SetActive(false);
         successImage.gameObject.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
 	}
 
 	void Update()
@@ -119,7 +131,7 @@ public class counterPuzzle : MonoBehaviour
 		{
 			successText.gameObject.SetActive(true);
 			successImage.gameObject.SetActive(true);
-		}
+        }
 	}
 
 }
