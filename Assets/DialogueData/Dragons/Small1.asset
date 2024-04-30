@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Small1
   m_EditorClassIdentifier: 
   dialogue:
-  - This touch, so icy and cool, it emits a kind of spiritual energy.
+  - Touching the wings, it feels so so icy and cool, like it emits a kind of spiritual
+    energy.
   responses: []
   needCondition: 0

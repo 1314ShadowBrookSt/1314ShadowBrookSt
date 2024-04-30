@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GlassDone
   m_EditorClassIdentifier: 
   dialogue:
-  - The artwork is missing several pieces of glasses.
+  - The artwork is missing several pieces of glass.
   responses: []
   needCondition: 0
